@@ -1,4 +1,3 @@
-
 export const frasesMotivacionais = [
   {
     id: 1,
