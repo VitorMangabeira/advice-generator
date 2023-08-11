@@ -69,53 +69,38 @@ main h1{
     height: min-content;
 }
 /* next_btn */
-.scene {
-margin: 0 20em;
- width: 10em;
- justify-content: center;
- align-items: center;
-}
-
-.cube {
- color: #ccc;
- cursor: pointer;
- font-family: 'Roboto', sans-serif;
- transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
- transform-style: preserve-3d;
- transform-origin: 100% 50%;
- width: 10em;
- height: 4em;
-}
-
-.cube:hover {
- transform: rotateX(-90deg);
-}
-
-.side {
- box-sizing: border-box;
- position: absolute;
- display: inline-block;
- height: 4em;
- width: 10em;
- text-align: center;
- text-transform: uppercase;
- padding-top: 1.5em;
- font-weight: bold;
-}
-
-.top {
- background: wheat;
- color: #222229;
- transform: rotateX(90deg) translate3d(0, 0, 2em);
- box-shadow: inset 0 0 0 5px #fff;
-}
-
-.front {
- background: #222229;
- color: #fff;
- box-shadow: inset 0 0 0 5px #fff;
- transform: translate3d(0, 0, 2em);
-}
+#next_btn{
+    cursor: pointer;
+    --button_radius: 0.75em;
+    --button_color: #fcfafa;
+    --button_outline_color: #e8c030;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  #next_btn:hover .button_top {
+    transform: translateY(-0.33em);
+  }
+  
+  #next_btn:active .button_top {
+    transform: translateY(0);
+  }
 /* FIM do next_btn */
 
 /* Design do Scetion - Sobre */
