@@ -5,8 +5,17 @@
   font-family: "Inter", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 header {
   background-color: #f2e5d8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   display: flex;
   justify-content: center;
@@ -31,6 +40,7 @@ header div nav ul {
   list-style: none;
 }
 
+/* Design do Box - Gerador de Frases */
 main {
   margin: 10% auto;
   align-items: center;
@@ -68,6 +78,40 @@ main h1 {
   width: 20%;
   height: min-content;
 }
+/* next_btn */
+#next_btn {
+  cursor: pointer;
+  --button_radius: 0.75em;
+  --button_color: #fcfafa;
+  --button_outline_color: #e8c030;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+#next_btn:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+#next_btn:active .button_top {
+  transform: translateY(0);
+}
+/* FIM do next_btn */
 
 .scene {
   margin: 0 20em;
@@ -212,4 +256,106 @@ textarea:focus {
   /* border: none; */
 
   padding: 4px;
+}
+/* Design do Scetion - Sobre */
+#sobre {
+  width: 100%;
+  background: #efd9c2;
+  height: min-content;
+  margin: auto;
+  padding: 15px auto;
+  text-align: center;
+  align-items: center;
+}
+#box {
+  width: 60%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+
+
+}
+#box1 {
+  width: 50%;
+  background: #efd5b9;
+}
+#nos {
+  width: fit-content;
+  height: min-content;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto 1rem 1rem;
+  align-items: center;
+}
+#nos hr {
+  transform: rotate(180deg);
+  background: #e8c030;
+  width: 3px;
+  height: 42.19px;
+  border: none;
+  margin-right: 1rem;
+}
+#nos h4 {
+  color: #421803;
+  font-family: Times New Roman;
+  font-size: medium;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+#box1 h2 {
+  background: #fde9d2;
+  margin: 0 auto;
+  width: fit-content;
+  color: #000;
+  font-family: Times New Roman;
+  font-size: xx-large;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#box1 p {
+  margin: 1.5rem auto;
+  text-align: start;
+  width: 95%;
+  height: fit-content;
+  color: #000;
+  font-family: Abel;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#box2 {
+  width: 50%;
+  height: min-content;
+  margin: 0;
+}
+#box2 img {
+  width: 100%;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 1440px) {
+  #box1 p {
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #box1 h2 {
+    font-size: x-large;
+  }
+  #box1 p {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #box1 p {
+    font-size: small;
+  }
 }
