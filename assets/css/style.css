@@ -187,3 +187,23 @@ main h1{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@media only screen and (max-width: 1440px)  {
+    #box1 p{
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 1024px)  {
+    #box1 h2{
+        font-size: x-large;
+    }
+    #box1 p{
+        font-size: medium;
+    }
+}
+@media only screen and (max-width: 768px)  {
+    
+    #box1 p{
+        font-size: small;
+    }
+}
