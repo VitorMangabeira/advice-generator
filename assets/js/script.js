@@ -1,15 +1,21 @@
-import { frasesMotivacionais } from "./data.js";
+import { advices } from "./data.js";
+import { el } from "./elements.js";
 
-const next_button = document.getElementById("next_btn")
-const display_frase = document.getElementById("frase")
+el.displayAdvice.innerHTML =
+  advices[Math.floor(Math.random() * advices.length)].frase;
 
-frase.innerHTML = frasesMotivacionais[Math.floor(Math.random()*frasesMotivacionais.length)].frase
+el.nextButton.addEventListener("click", () => {
+  const randomAdvice =
+    advices[Math.floor(Math.random() * advices.length)].frase;
+  el.displayAdvice.innerHTML = randomAdvice;
+});
 
-function exibir_frases_randomicas(){
-    const frase_aleatoria = frasesMotivacionais[Math.floor(Math.random()*frasesMotivacionais.length)].frase
-    display_frase.innerHTML = frase_aleatoria
-}
+el.contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-next_button.addEventListener('click', exibir_frases_randomicas)
-
-
+  Toastify({
+    text: "Formulário enviado",
+    duration: 3000,
+    position: "center",
+  }).showToast();
+});
