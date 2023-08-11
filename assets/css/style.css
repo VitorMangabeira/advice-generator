@@ -5,6 +5,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Design do Cabeçalho */
 header{
     background-color:#f2e5d8;
        
@@ -31,6 +32,7 @@ header div nav ul{
     list-style: none;    
 }
 
+/* Design do Box - Gerador de Frases */
 main {
     margin: 10% auto;
     align-items: center;
@@ -66,7 +68,7 @@ main h1{
     width: 20%;
     height: min-content;
 }
-
+/* next_btn */
 .scene {
 margin: 0 20em;
  width: 10em;
@@ -113,4 +115,86 @@ margin: 0 20em;
  color: #fff;
  box-shadow: inset 0 0 0 5px #fff;
  transform: translate3d(0, 0, 2em);
+}
+/* FIM do next_btn */
+
+/* Design do Scetion - Sobre */
+#sobre{
+    width: 100%;
+    background: #efd9c2;
+    height: min-content;
+    margin: 30px auto;
+    padding: 15px auto;
+    text-align: center;
+    align-items: center;
+}
+#box{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+#box1{
+    width: 50%;
+    background: #efd5b9;
+}
+#nos{
+    width: fit-content;
+    height: min-content;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto 1rem 1rem;
+    align-items: center;
+}
+#nos hr{
+    transform: rotate(180deg);
+    background: #e8c030;
+    width: 3px;
+    height: 42.19px;
+    border: none;
+    margin-right: 1rem;
+}
+#nos h4{
+    color: #421803;
+    font-family: Times New Roman;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+#box1 h2{
+    background: #FDE9D2;
+    margin: 0 auto;
+    width: fit-content;
+    color: #000;
+    font-family: Times New Roman;
+    font-size: xx-large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#box1 p{
+    margin: 1.5rem auto;
+    text-align: start;
+    width: 95%;
+    height: fit-content;
+    color: #000;
+    font-family: Abel;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#box2{
+    width: 50%;
+    height: min-content;
+    margin: 0;
+}
+#box2 img{
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
